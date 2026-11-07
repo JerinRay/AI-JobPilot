@@ -1,0 +1,173 @@
+/* ==========================================
+   AI-JOBPILOT — PREMIUM DASHBOARD THEME
+   ========================================== */
+
+:root {
+    --primary: #6366f1;
+    --primary-light: #818cf8;
+    --background: #f5f7fb;
+    --surface: #ffffff;
+    --text: #172033;
+    --muted: #718096;
+    --border: #e8edf5;
+}
+
+/* Main application */
+
+.stApp {
+    background: var(--background);
+    color: var(--text);
+}
+
+.block-container {
+    max-width: 1450px;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+}
+
+/* Sidebar */
+
+[data-testid="stSidebar"] {
+    background: #111827;
+    border-right: 1px solid #263247;
+}
+
+[data-testid="stSidebar"] * {
+    color: #e5e7eb;
+}
+
+[data-testid="stSidebar"] h1 {
+    color: #ffffff;
+    font-size: 1.55rem;
+    font-weight: 800;
+}
+
+[data-testid="stSidebar"] [data-testid="stMarkdownContainer"] p {
+    color: #9ca3af;
+}
+
+/* Headings */
+
+h1, h2, h3 {
+    color: #172033;
+    font-weight: 750;
+    letter-spacing: -0.035em;
+}
+
+h1 {
+    font-size: 2.25rem;
+}
+
+h2 {
+    font-size: 1.55rem;
+}
+
+/* Metric cards */
+
+[data-testid="stMetric"] {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 4px 16px rgba(20, 35, 70, 0.035);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+[data-testid="stMetric"]:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(20, 35, 70, 0.08);
+}
+
+[data-testid="stMetricLabel"] {
+    color: var(--muted);
+    font-weight: 600;
+}
+
+[data-testid="stMetricValue"] {
+    color: #172033;
+    font-weight: 800;
+}
+
+/* Containers and cards */
+
+[data-testid="stVerticalBlockBorderWrapper"] {
+    border-color: var(--border);
+    border-radius: 16px;
+    background: var(--surface);
+}
+
+/* Buttons */
+
+.stButton > button,
+.stFormSubmitButton > button {
+    border-radius: 10px;
+    border: 1px solid #6366f1;
+    background: #6366f1;
+    color: #ffffff;
+    font-weight: 650;
+    padding: 0.55rem 1rem;
+    transition: all 0.2s ease;
+}
+
+.stButton > button:hover,
+.stFormSubmitButton > button:hover {
+    background: #4f46e5;
+    border-color: #4f46e5;
+    color: #ffffff;
+    transform: translateY(-1px);
+}
+
+/* Inputs */
+
+.stTextInput input,
+.stTextArea textarea,
+.stSelectbox div[data-baseweb="select"] {
+    border-radius: 10px;
+}
+
+/* Tables */
+
+[data-testid="stDataFrame"] {
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+/* Alerts */
+
+[data-testid="stAlert"] {
+    border-radius: 12px;
+}
+
+/* Expanders */
+
+[data-testid="stExpander"] {
+    background: #ffffff;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+}
+
+/* Dividers */
+
+hr {
+    border-color: var(--border);
+}
+
+/* Links */
+
+a {
+    color: #4f46e5 !important;
+    font-weight: 600;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+    .block-container {
+        padding: 1rem;
+    }
+
+    h1 {
+        font-size: 1.7rem;
+    }
+}

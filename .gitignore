@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+
+# IDE and OS
+.DS_Store
+.vscode/
+.idea/
+
+# Logs and caches
+logs/
+*.log
+.pytest_cache/
+.mypy_cache/
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Private candidate and generated data
+data/raw/
+data/processed/
+config/candidate_profile.json
+outputs/
+
+# Temporary files
+*.tmp
+*.bak
